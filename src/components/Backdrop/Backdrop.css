@@ -8,3 +8,9 @@
     top: 0;
 
 }
+
+@media (min-width: 765px) {
+    .backDrop {
+        display: none;
+    }
+}

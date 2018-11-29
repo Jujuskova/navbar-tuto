@@ -12,8 +12,22 @@
     transition: transform 0.3s ease-out;
 }
 
+.side-drawer .cross{
+    font-size: 31px;
+    position: absolute;
+    right: 20px;
+    top: 5%;
+    cursor: pointer;
+}
+
 .side-drawer.open {
     transform: translateX(0);
+}
+.side-drawer .other-website-button {
+    color: #fa923f;
+}
+.side-drawer .other-website-button:hover {
+    color: #222222;
 }
 
 .side-drawer ul {
@@ -22,22 +36,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
 }
 
 .side-drawer li {
     margin: 0.5rem 0;
+    padding: 0 15px;
 }
 
 .side-drawer a {
-    color: purple;
+    color: #00a9ac;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: #fa923f
+    color: #a7a9aC;
+    font-size: 1.25rem;
 }
+
 
 @media (min-width: 766px) {
     .side-drawer {

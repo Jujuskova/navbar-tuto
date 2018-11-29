@@ -30,11 +30,25 @@
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
+}*/
+
+.toolbar-email .fa-envelope, .toolbar-phone .fa-phone{
+    margin: 0 10px; 
+    color: #00A9AC;
+    font-size: 1.3rem;
 }
+
+#toolbarPhoneText,  #toolbarMailText {
+    display: none;
+    color: #a7a9aC
+}
+
+
+
 
 .spacer {
     flex: 1;
-} */
+} 
 
 .toolbar_navigation-items a{
     color: #00A9AC;
@@ -44,7 +58,8 @@
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-    color: #fa923f;
+    color: #a7a9aC;
+    font-weight: 700;
 }
 
 .toolbar_navigation-items ul {
@@ -64,20 +79,23 @@
     color: #fa923f;
 }
 
-
-
-@media (max-width: 765px) {
-    .toolbar_navigation-items {
-        display: none
-    }
-
-    .toolbar_navigation {
-        justify-content: flex-end;
-    }
+.toolbar_navigation-items .other-website-button:hover{
+    color: #222222;
 }
+
+
 
 @media (min-width: 1231px) {
     .toolbar_toggle-button {
+        display: none;
+    }
+    .spacer {
+        display: none;
+    }
+    .toolbar-email{
+        display: none;
+    }
+    .toolbar-phone {
         display: none;
     }
 }
@@ -90,6 +108,25 @@
     .toolbar_navigation-items li {
         padding: 0 0.8rem;
         font-size: 1.1rem;
+    }
 
+    .spacer {
+        display: none;
+    }
+    .toolbar-email{
+        display: none;
+    }
+    .toolbar-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
+    .toolbar_navigation-items {
+        display: none
+    }
+
+    .toolbar_navigation {
+        justify-content: flex-end;
     }
 }

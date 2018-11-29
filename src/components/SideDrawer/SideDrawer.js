@@ -9,12 +9,14 @@ const SideDrawer = props => {
     }
     return (
     <nav className={drawerClasses}>
+        <i className="fas fa-times cross" onClick={props.clickCross}></i>
         <ul>
-            <li><a href="#">Pourquoi imprimer en 3D</a></li>
+            <li><a href="#">Pourquoi imprimer en 3D ?</a></li>
             <li><a href="#">Nos Réalisations</a></li>
             <li><a href="#">Nos Moyens</a></li>
             <li><a href="#">Demande de devis</a></li>
             <li><a href="#">Qui sommes nous ?</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="#" className="other-website-button">Achat de matériel</a></li>
         </ul>
     </nav>
