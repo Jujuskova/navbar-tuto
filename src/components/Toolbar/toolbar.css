@@ -49,3 +49,19 @@
 .toolbar_navigation-items li {
     padding: 0 0.5rem;
 }
+
+@media (max-width: 765px) {
+    .toolbar_navigation-items {
+        display: none
+    }
+}
+
+@media (min-width: 766px) {
+    .toolbar_toggle-button {
+        display: none;
+    }
+
+    .toolbar_logo {
+        margin-left: 0;
+    }
+}
